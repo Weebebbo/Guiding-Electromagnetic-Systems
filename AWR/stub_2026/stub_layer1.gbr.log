@@ -1,0 +1,43 @@
+$AWR Design Environment
+$Version 19.05 19471 Rev1 (7224fa659483863ab5325f02c1a51698eaf24414)
+$Export time : Fri Apr 24 13:57:03 2026
+$Export Format: Gerber
+$Export File Name: D:/University/_Documenti/Guiding Electromagnetic Systems/AWR/stub_2026/stub_layer1.gbr
+
+
+
+Statistics Of Layers
+
+Drawing Layer    File Layer    Layer DataType Rects Polygons  Paths Ellipses Texts Pins Drillholes
+--------------------------------------------------------------------------------------------------
+Layer 1          N/A             10        0     0         1     0        0     0    0         0
+Layer 2          N/A             15        0     0         0     0        0     0    0         0
+
+
+Summary Of Objects
+------------------
+         0 Rects     
+         1 Polygons  
+         0 Paths     
+         0 Texts     
+         0 Ellipses  
+         0 Instances 
+         0 Arrays    
+         0 Pins      
+         0 Drillholes
+
+
+Export Options
+--------------
+Draw path as polygon: 1
+Export pcell instances as cells: 0
+Export subcircuits as cells: 1
+Flatten cell hierarchy: 1
+Merge polygons on the +/- layers: 1
+Union polygons on the same layer: 1
+Write Cell using cached geometry: 0
+Write out pcell parameter maps: 0
+
+
+*** There were 0 warning and 0 error messages ***
+

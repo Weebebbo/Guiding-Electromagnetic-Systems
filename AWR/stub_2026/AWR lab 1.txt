@@ -1,0 +1,24 @@
+AWR lab 1
+- The first and last lines are access lines and not the real stub that we have to design. The lenghts are not equal to the ones from the simulation because the manufacturer will give us a an accuracy so this is not really important. Also because these are access lines and not the real stub.
+
+- We use an intelligent T-Junction becasuse it will adapt its lenght and width to other parameters ot the network.
+
+- MLEF is the stub, HERE and here only we assign the correct lenght with a certain accuracy from the simulation value. The simulation value was ~20500, we put 20000um that is a close value that the manifacturer can respect.
+
+- Now we have to define ports and so port reference impedences.
+
+- We use a rectangular graph because we want to plot the scattering parameters.
+
+- In order to fine tune the specs that i need to develop, I have to set a parameter as tunable. Then graph everything, then place a pointer where we want to see the spec, then finally open the tuner and adjust the slider until the marker is where I want it to be.
+
+- We use AXIEM for electromagnetic simualtion, we use this because awr uses this for planar simulations.
+
+- For the cell X/Y size we have to choose a value in order to have a correct number of cells for the Whole lenght of the microstrip. The number of cells should be at least 1/20th of the lenght.
+
+- We use thin metal for the stackup because we simulate pcbs and the thinckness of metal is usually small/thin. Then we go in the awr module and set its caracteristics there. We put in the dielectric layers that we want just one layer 3175um thick and then top and on the sides open, on the bottom we need copper. For the conductor (material section) we use the 1oz/ft^2 36mm thickness. In the EM layer mapping section WE HAVE TO SET THE AXIEM_MAP CONDIGURATION. Then we remove every layer that we don't need and SELECT THE RIGHT CONDUCTOR.
+
+- If the layout fucks itself, go in the layout view and snap together the design.
+
+- If after the graph of the extracted design, the linear simulation and the em simulation curves snap together, in the schematics double click on the extraction component, then click on toggle enable and run the simulation again. By doing this the curves "decouple" and they work again.
+
+- We cant see the ground layer (layer 2) in the layout view because by using the think_metal stackup we already embedded the ground layer.
